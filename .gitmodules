@@ -1,0 +1,3 @@
+[submodule "checkouts/moustache"]
+	path = checkouts/moustache
+	url = https://github.com/cgrand/moustache.git

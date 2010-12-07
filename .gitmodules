@@ -1,0 +1,9 @@
+[submodule "checkouts/ring"]
+	path = checkouts/ring
+	url = https://github.com/mmcgrana/ring.git
+[submodule "checkouts/clojureql"]
+	path = checkouts/clojureql
+	url = https://github.com/LauJensen/clojureql.git
+[submodule "checkouts/moustache"]
+	path = checkouts/moustache
+	url = https://github.com/cgrand/moustache.git

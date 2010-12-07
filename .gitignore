@@ -11,3 +11,4 @@ logs/*
 all.js
 furtive.iml
 .idea
+db/schema.rb

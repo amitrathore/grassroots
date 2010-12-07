@@ -1,0 +1,28 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: grassroots_dev
+  pool: 5
+  username: grassroots_user
+  password: password
+  host: lookingglass.local
+
+production:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: somedatabase_dev
+  pool: 5
+  username: root
+  password:
+  socket: /var/run/mysqld/mysqld.sock
+
+test:
+  encoding: utf8
+  reconnect: false
+  database: grassroots_test
+  pool: 5
+  username: grassroots_user
+  password: password
+  host: lookingglass.local

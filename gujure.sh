@@ -6,12 +6,11 @@ export GRASSROOTS_HOME=${GRASSROOTS_HOME:-"${CURRENT_DIR}"}
 grassroots_jars="${GRASSROOTS_HOME}/lib/*:${GRASSROOTS_HOME}/lib/dev/*"
 
 grassroots_clp="${GRASSROOTS_HOME}/src"
+grassroots_clp="${grassroots_clp}:${GRASSROOTS_HOME}/lib/*"
 grassroots_clp="${grassroots_clp}:${GRASSROOTS_HOME}/checkouts/ring/src"
-grassroots_clp="${grassroots_clp}:${GRASSROOTS_HOME}/checkouts/ring/lib/*"
 grassroots_clp="${grassroots_clp}:${GRASSROOTS_HOME}/checkouts/moustache/src"
-grassroots_clp="${grassroots_clp}:${GRASSROOTS_HOME}/checkouts/moustache/lib/*"
 grassroots_clp="${grassroots_clp}:${GRASSROOTS_HOME}/checkouts/clojureql/src"
-grassroots_clp="${grassroots_clp}:${GRASSROOTS_HOME}/checkouts/clojureql/lib/*"
+
 
 # Whether to load the repl or script
 if [ -z "$1" ]; then

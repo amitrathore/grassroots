@@ -10,6 +10,7 @@ grassroots_clp="${grassroots_clp}:${GRASSROOTS_HOME}/lib/*"
 grassroots_clp="${grassroots_clp}:${GRASSROOTS_HOME}/checkouts/ring/src"
 grassroots_clp="${grassroots_clp}:${GRASSROOTS_HOME}/checkouts/moustache/src"
 grassroots_clp="${grassroots_clp}:${GRASSROOTS_HOME}/checkouts/clojureql/src"
+grassroots_clp="${grassroots_clp}:${GRASSROOTS_HOME}/checkouts/jabberwocky/src"
 
 
 # Whether to load the repl or script

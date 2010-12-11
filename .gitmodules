@@ -7,3 +7,6 @@
 [submodule "checkouts/moustache"]
 	path = checkouts/moustache
 	url = https://github.com/cgrand/moustache.git
+[submodule "checkouts/jabberwocky"]
+	path = checkouts/jabberwocky
+	url = git@github-amit:amitrathore/jabberwocky.git

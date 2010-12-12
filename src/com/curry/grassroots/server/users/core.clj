@@ -5,6 +5,7 @@
   (:require [com.curry.grassroots [config :as conf]]))
 
 (defn new-user [{:keys [params]}]
-  (let [{:keys [username password]} params
+  (let [{:keys [jid password]} params
+        _   (println "new-user:" params "jid, password:" jid password)
         c (new-connection {:host (conf/xmpp-host)})]
-    {:body (json/encode-to-str {:result (register-new-user username password c)})}))
+    {:body (json/encode-to-str {:result (register-new-user jid password c)})}))

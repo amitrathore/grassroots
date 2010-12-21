@@ -1,0 +1,65 @@
+<iq type="set" to="MUC_ROOM" id="IQ_ID" >
+  <query xmlns="http://jabber.org/protocol/muc#owner">
+    <x xmlns="jabber:x:data" type="submit" >
+      <field type="hidden" var="FORM_TYPE" >
+        <value>http://jabber.org/protocol/muc#roomconfig</value>
+      </field>
+      <field type="text-single" var="muc#roomconfig_roomname" >
+        <value>ROOM_NAME</value>
+      </field>
+      <field type="text-single" var="muc#roomconfig_roomdesc" >
+        <value>ROOM_DESC</value>
+      </field>
+      <field type="boolean" var="muc#roomconfig_persistentroom" >
+        <value>1</value>
+      </field>
+      <field type="boolean" var="muc#roomconfig_publicroom" >
+        <value>1</value>
+      </field>
+      <field type="boolean" var="public_list" >
+        <value>0</value>
+      </field>
+      <field type="boolean" var="muc#roomconfig_passwordprotectedroom" >
+        <value>0</value>
+      </field>
+      <field type="text-private" var="muc#roomconfig_roomsecret" >
+        <value></value>
+      </field>
+      <field type="list-single" var="muc#roomconfig_maxusers" >
+        <value>200</value>
+      </field>
+      <field type="list-single" var="muc#roomconfig_whois" >
+        <value>moderators</value>
+      </field>
+      <field type="boolean" var="muc#roomconfig_membersonly" >
+        <value>0</value>
+      </field>
+      <field type="boolean" var="muc#roomconfig_moderatedroom" >
+        <value>0</value>
+      </field>
+      <field type="boolean" var="members_by_default" >
+        <value>1</value>
+      </field>
+      <field type="boolean" var="muc#roomconfig_changesubject" >
+        <value>1</value>
+      </field>
+      <field type="boolean" var="allow_private_messages" >
+        <value>1</value>
+      </field>
+      <field type="boolean" var="allow_query_users" >
+        <value>0</value>
+      </field>
+      <field type="boolean" var="muc#roomconfig_allowinvites" >
+        <value>1</value>
+      </field>
+      <field type="boolean" var="muc#roomconfig_allowvisitorstatus" >
+        <value>1</value>
+      </field>
+      <field type="boolean" var="muc#roomconfig_allowvisitornickchange" >
+        <value>0</value>
+      </field>
+    </x>
+  </query>
+</iq>
+
+

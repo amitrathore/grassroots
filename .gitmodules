@@ -10,3 +10,6 @@
 [submodule "checkouts/jabberwocky"]
 	path = checkouts/jabberwocky
 	url = git@github-amit:amitrathore/jabberwocky.git
+[submodule "checkouts/enlive"]
+	path = checkouts/enlive
+	url = https://github.com/cgrand/enlive.git

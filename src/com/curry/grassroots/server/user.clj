@@ -1,4 +1,4 @@
-(ns com.curry.grassroots.server.users.core
+(ns com.curry.grassroots.server.user
   (:use org.curry.jabberwocky.connection
         org.curry.jabberwocky.server.registration)
   (:require [org.danlarkin [json :as json]])

@@ -17,4 +17,4 @@
                      wrap-params
                      wrap-keyword-params
                      :post (app ["user"] new-user)
-                     :get (app ["room_config"] muc/render-room-config)))
+                     :get (app ["room_config"] muc/new-room-config)))

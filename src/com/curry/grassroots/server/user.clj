@@ -10,6 +10,11 @@
   (let [user {:email jid :encrypted_password password}]
     @(cql/conj! USERS user)))
 
+(defn list-groups [{:keys [params]}]
+  (let [groups @(cql/select GROUPS (cql/where (= :username (:username params))))
+        names (doall (map :groupname groups))]
+    {:body (json/encode-to-str names)}))
+
 (defn new-user [{:keys [params]}]
   (let [{:keys [jid password]} params
         _   (println "new-user:" params "jid, password:" jid password)

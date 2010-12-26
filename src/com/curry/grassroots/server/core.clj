@@ -1,10 +1,10 @@
 (ns com.curry.grassroots.server.core
   (:use net.cgrand.moustache)
-  (:use com.curry.grassroots.server.user)
   (:use [ring.adapter.jetty :only [run-jetty]])
   (:use ring.middleware.params
         ring.middleware.keyword-params)
-  (:require [com.curry.grassroots.server.muc-config :as muc])
+  (:require [com.curry.grassroots.server.muc-config :as muc]
+            [com.curry.grassroots.server.user :as user])
   (:require [com.curry.grassroots [config :as conf]]))
 
 (declare grassroots-app)
@@ -16,5 +16,6 @@
 (def grassroots-app (app
                      wrap-params
                      wrap-keyword-params
-                     :post (app ["user"] new-user)
-                     :get (app ["room_config"] muc/new-room-config)))
+                     ["user"] {:post user/new-user}
+                     ["room_config"] {:get muc/new-room-config}
+                     ["groups"] {:get user/list-groups}))

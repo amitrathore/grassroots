@@ -5,5 +5,5 @@
          :subprotocol "mysql"
          :user "grassroots_user"
          :password "password"
-         :subname "//lookingglass.local:3306/grassroots_dev"})
+         :subname "//localhost:3306/grassroots_prod"})
 

@@ -9,7 +9,13 @@
 
 (declare grassroots-app)
 
-(conf/load-config "/Users/amit/workspace/grassroots/config/config.clj" :development)
+(def config-file (str (.get (System/getenv) "GRASSROOTS_HOME") "/config/config.clj"))
+(def env (.get (System/getenv) "GRASSROOTS_ENV"))
+
+(conf/load-config config-file (keyword env))
+
+(println "Loading config from:" config-file)
+(println "Starting in" env "mode")
 
 (def server (doto (Thread. #(run-jetty #'grassroots-app {:port 8080})) .start))
 

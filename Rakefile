@@ -1,4 +1,5 @@
 begin
+  require 'rubygems'
   require 'tasks/standalone_migrations'
   MigratorTasks.new do |t|
     # t.migrations = "db/migrations"

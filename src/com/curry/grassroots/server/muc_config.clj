@@ -21,5 +21,5 @@
 
 (defn new-room-config [{params :params}]
   (let [group-created (record-new-room-locally (:username params) (:roomname params))
-        config-xml (render-response (room-config params))]
+        config-xml (render (room-config params))]
     {:body (json/encode-to-str {:result group-created :config config-xml})}))

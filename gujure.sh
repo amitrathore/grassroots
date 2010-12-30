@@ -1,6 +1,7 @@
 CURRENT_DIR=$(cd `dirname $0`; pwd)
 INFERRED_ROOT=$(cd `dirname $0`; cd .. ; pwd)
 
+export GRASSROOTS_ENV=development
 export GRASSROOTS_HOME=${GRASSROOTS_HOME:-"${CURRENT_DIR}"}
 
 grassroots_jars="${GRASSROOTS_HOME}/lib/*:${GRASSROOTS_HOME}/lib/dev/*"

@@ -1,6 +1,7 @@
 (ns com.curry.grassroots.server.mysql-store
-  (:use com.curry.grassroots.server.db)
+  (:require [com.curry.grassroots [config :as conf]])  
   (:require [clojureql [core :as cql]]))
 
-(def USERS (cql/table DB :users))
-(def GROUPS (cql/table DB :groups))
+(defn init []
+  (def USERS (cql/table (conf/db) :users))
+  (def GROUPS (cql/table (conf/db) :groups)))

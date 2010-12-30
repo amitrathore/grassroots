@@ -8,3 +8,6 @@
 
 (defn xmpp-host []
   (get-in CONFIG-MAP [ENV :host]))
+
+(defn db []
+  (get-in CONFIG-MAP [ENV :db]))
